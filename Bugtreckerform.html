@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        form {
+            /* background-image: url(./joe-woods-4Zaq5xY5M_c-unsplash.jpg); */
+        }
+
+        .container {
+            border: 5px solid green;
+            width: 700px;
+            margin: auto;
+            margin-top: 20px;
+            padding: 20px;
+            background-image: url(./image/lum3n--RBuQ2PK_L8-unsplash.jpg);
+            background-size: cover;
+
+        }
+
+        .header {
+            /* border: 2px solid red; */
+            background-color: palegreen;
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .icons h1 {
+            font-family: fantasy;
+            font-size: 40px;
+        }
+
+        .header h3 {
+            font-size: 20px;
+        }
+
+
+
+        button {
+            height: 1cm;
+            color: antiquewhite;
+            background-color: cornflowerblue;
+            width: 20%;
+            font-size: medium;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            /* border: 5px solid yellow; */
+
+        }
+
+        button:hover {
+            background-color: black;
+            color: white
+        }
+
+        .option1 {
+            margin-left: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" method="post" autocomplete="off">
+
+            <div class="header">
+                <div class="icons">
+                    <img src="./image/seo.png" alt="">
+                </div>
+
+                <div class="icons">
+                    <h1>BUG TRACKER</h1>
+                    <h3>Report all bugs!</h3>
+                </div>
+            </div>
+            <br><br>
+            <label for="Bug Title">Bug Title *</label>
+            <input type="text" name="Bug_Title" required style="border: none; border-bottom: 1px solid black;"><br><br>
+
+            <label for="Issue Description">Issue Description *</label>
+            <textarea name="" id="" cols="20" rows="5"></textarea><br><br>
+
+            <label for="Operating System">Operating System *</label>
+            <select name="" id="Operating_System">
+                <option value="">-Select-</option>
+                <option value="">Security</option>
+                <option value="">Functional</option>
+                <option value="">Critical</option>
+                <option value="">Syntax</option>
+                <option value="">Communication</option>
+            </select><br><br>
+
+            <label for="Browser">Browser *</label>
+            <input type="radio" name="Browser">
+            <label for="Internet Explore">Internet Explore</label><br>
+
+            <div class="option1">
+                <input type="radio" name="Browser">
+
+                <label for="Chorme">Chorme</label><br>
+                <input type="radio" name="Browser">
+                <label for="Firefox">Firefox</label><br>
+                <input type="radio" name="Browser">
+                <label for="Safari">Safari</label><br>
+                <input type="radio" name="Browser">
+                <label for="OPera">OPera</label><br>
+                <input type="radio" name="Browser">
+                <label for="Other">Other</label><br><br>
+
+            </div>
+
+            <label for="Assigned To">Assigned To *</label>
+            <select name="" id="Assigned To">
+                <option value="">-Select-</option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+            <br><br>
+
+            <label for="Priority">Priority *</label>
+            <select name="" id="Priority">
+                <option value="">-Select-</option>
+                <option value="">Low</option>
+                <option value="">High</option>
+                <option value="">Medium</option>
+            </select>
+            <br><br>
+
+
+            <label for="Screenshot">Screenshot</label>
+            <input type="file" name="file"><br><br>
+
+            <label for="Status">Status *</label>
+            <select name="" id="Status">
+                <option value="">-Select-</option>
+                <option value="">Open</option>
+                <option value="">Closed</option>
+                <option value="">Resolved</option>
+                <option value="">In Progress</option>
+            </select>
+            <br><br>
+            <button>Submit</button>
+    </div>
+
+
+    </form>
+</body>
+
+</html>
